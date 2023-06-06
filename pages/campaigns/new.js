@@ -4,6 +4,7 @@ import Layout from "../../components/Layout";
 import "semantic-ui-css/semantic.min.css";
 import factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
+import { Router } from '../../routes';
 
 class CampaginNew extends Component {
 
@@ -25,6 +26,7 @@ class CampaginNew extends Component {
             .send({
                 from: accounts[0]
             });
+            Router.pushRoute('/');
         } catch (err) {
             this.setState({errorMessage: err.message});
         }
