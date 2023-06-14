@@ -1,15 +1,26 @@
 {
-  "name": "kickstart-updated",
+  "name": "fundit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "routes.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "mocha",
-    "dev": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunJunBahadur/FundIt.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JunJunBahadur/FundIt/issues"
+  },
+  "homepage": "https://github.com/JunJunBahadur/FundIt#readme",
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.1.12",
     "fs-extra": "^11.1.1",
